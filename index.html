@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datopian Data Challenge</title>
+
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 id="heading">Data Wrangling Challenge</h1>
+        <svg id="chart"></svg>
+        <ul id="periods" class="row justify-content-center list-group list-group-horizontal">
+            <button id="daily" type="button" class="col col-lg-2 list-group-item .list-group-item-action" onclick="showData('daily')">Daily</button>
+            <button id="weekly" type="button" class="col col-lg-2 list-group-item .list-group-item-action" onclick="showData('weekly')">Weekly</button>
+            <button id="monthly" type="button" class="col col-lg-2 list-group-item .list-group-item-action" onclick="showData('monthly')">Monthly</button>
+            <button id="annual" type="button" class="col col-lg-2 list-group-item .list-group-item-action" onclick="showData('annual')">Annual</button>
+        </ul>
+        <div class="row justify-content-center">
+            <table id="table" class="col col-lg-4 col-md-6 col-sm-8 col-10 table table-bordered"></table>
+    </div>
+    
+</body>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script src="https://d3js.org/d3.v5.min.js"></script>
+<script src="chart.js"></script>
+</html>
