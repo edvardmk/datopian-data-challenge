@@ -36,7 +36,7 @@ def download_data(period):
     datemode = workbook.datemode
 
     # write output
-    with open(f'data/{period.name} prices.csv', 'w', newline='') as csvfile:
+    with open(f'data/{period.name}-prices.csv', 'w', newline='') as csvfile:
         csv_writer = csv.writer(
             csvfile, delimiter=',',
             quotechar='"',

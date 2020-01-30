@@ -1,0 +1,85 @@
+{
+    "name": "henry-hub-natural-gas-spot-price",
+    "title": "Henry Hub natural gas spot price",
+    "version": "1.0",
+    "licenses": [{
+        "path": "http://opendatacommons.org/licenses/pddl/",
+        "title": "Open Data Commons Public Domain",
+        "name": "ODC-PDDL-1.0"
+    }],
+    "sources": [{
+        "title": "U.S. Energy Information Administration",
+        "path": "https://www.eia.gov/dnav/ng/hist/rngwhhdm.htm"
+    }],
+    "resources": [{
+        "name": "daily-prices",
+        "path": "https://github.com/edvardmk/datopian-data-challenge/data/daily-prices.csv",
+        "schema": {
+            "fields": [
+                {
+                    "name": "Date",
+                    "type": "date"
+                },
+                {
+                    "name": "Price",
+                    "type": "number",
+                    "description": "Dollars per Million Btu"
+                }
+            ]
+        }
+    },
+    {
+        "name": "weekly-prices",
+        "path": "https://github.com/edvardmk/datopian-data-challenge/data/weekly-prices.csv",
+        "schema": {
+            "fields": [
+                {
+                    "name": "Date",
+                    "type": "date",
+                    "description": "Friday of the week"
+                },
+                {
+                    "name": "Price",
+                    "type": "number",
+                    "description": "Dollars per Million Btu"
+                }
+            ]
+        }
+    },
+    {
+        "name": "monthly-prices",
+        "path": "https://github.com/edvardmk/datopian-data-challenge/data/monthly-prices.csv",
+        "schema": {
+            "fields": [
+                {
+                    "name": "Date",
+                    "type": "date",
+                    "description": "First day of the month"
+                },
+                {
+                    "name": "Price",
+                    "type": "number",
+                    "description": "Dollars per Million Btu"
+                }
+            ]
+        }
+    },
+    {
+        "name": "annual-prices",
+        "path": "https://github.com/edvardmk/datopian-data-challenge/data/annual-prices.csv",
+        "schema": {
+            "fields": [
+                {
+                    "name": "Date",
+                    "type": "date",
+                    "description": "First day of the year"
+                },
+                {
+                    "name": "Price",
+                    "type": "number",
+                    "description": "Dollars per Million Btu"
+                }
+            ]
+        }
+    }]
+}
