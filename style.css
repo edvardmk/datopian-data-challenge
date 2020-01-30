@@ -1,7 +1,14 @@
 /* HTML */
-#heading {
+.center {
     text-align: center;
-    margin: 8% 0 4.5%;
+}
+
+#heading {
+    margin: 8% 0 2%;
+}
+
+#subheading {
+    margin: 2% 0 4%
 }
 
 #chart {
