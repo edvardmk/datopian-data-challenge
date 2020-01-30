@@ -1,1 +1,0 @@
-# datopian-data-challenge
